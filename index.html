@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>school2D</title>
+
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <!-- <script src="libraries/p5.sound.js"></script> -->
+    <script src="sketch.js"></script>
+    <script src="boid.js"></script>
+    <!-- <script src="libraries/CSVExport.js"></script> -->
+    <!-- <script src="school.js"></script> -->
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      canvas {
+        margin: auto;
+        padding-left: 10px;
+      }
+      div {
+        width: 235px;
+        height: 480px;
+        border: 1px solid #eee;
+        background: #eee;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-div">
+      <input id="pr" type="number" placeholder="Perception Radius: 0.5" />
+      <input id="mf" type="number" placeholder="Max Force: 0.005" />
+      <input id="ms" type="number" placeholder="Max Speed: 0.05" />
+      <!-- <textarea name="taIn" id="" cols="30" rows="10"></textarea> -->
+      <textarea name="taOut" id="taOut" cols="30" rows="10"></textarea>
+      <button name="btStart" id="Start" onclick="buttonClick()">Run</button>
+      <button name="btStop" id="Stop" onclick="buttonClick()">Stop</button>
+      <button name="reRun" id="Rerun" onclick="buttonClick()">
+        Rerun
+      </button>
+    </div>
+  </body>
+</html>
